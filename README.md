@@ -2,6 +2,8 @@
 # EVA7 - Assignment 4
 ## Part 1 - Explaining BackPropagation through a simple Multi Layer Perceptron
 
+![Imgur](https://imgur.com/g080zna.png)
+
 Back Propagation is a way with which we update the model parameters by subtracting it's gradients so that it can converge towards the minima. This is done with the help of Chain rule.
 
 Our aim at each each iteration of the training loop is to calculate  partial derivative of  the loss function with respect to each weights(parameters of the models)
