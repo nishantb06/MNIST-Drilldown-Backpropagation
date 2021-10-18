@@ -1,4 +1,3 @@
-# MNIST-Drilldown-Backpropagation
 # EVA7 - Assignment 4
 ## Part 1 - Explaining BackPropagation through a simple Multi Layer Perceptron
 
@@ -50,21 +49,21 @@ These gradients were used to calculate the final value of loss for 200 iteration
 ## Part-2 MNIST Drilldown
 #### Write a custom model architecture with less than 20k parameters which is able to get a validation accuracy of 99.4% with no more than 20 epochs on the MNIST Dataset
 ---
+## Acheived 99.47% accuracy
 
 ### File Structure
 1. **dataloader.py** : Contains code for the train and test data loaders for the MNIST digits. Various augmentation can be added here as well
-2. **models.py** : Contains different models I have experimented with. Last model - Net8 gives the best resluts, with a validation accuracy of 99.36 %. It is my best model because it consistently gives a accuracy greater than 99.3 % in the last few epochs and has a better accuracy in the first epoch than any other model
+2. **models.py** : Contains different models I have experimented with. Last model - Net8 gives the best resluts, with a validation accuracy of 99.47 %. It is my best model because it consistently gives a accuracy greater than 99.3 % in the last few epochs and has a better accuracy in the first epoch than any other model
 3. **train.py** : training function
 4. **test.py** : test function :
-5. **EVA7-Ass4.ipynb** : Colab notebook for training on GPU's
+5. **EVA7-Ass4.ipynb** : Colab notebook for training on GPU's which imports necessaay classes/functions from above files.
 
 ## Model Structure 
 * Model uses two Max-Pooling layers and applies a Global Average Pooling when the channel size becomes 3x3.
 * In order to divide the model into 3 blocks, I have used padding in the first 2 layers to keep the image size constant.
 * 3x3 Kernels were used for Convolutions operations and 1x1  for transition blocks.
-* Net2 and Net8 give best resluts of **99.35% validation accuracy**
+* Net2 and Net8 give best resluts of **99.47% validation accuracy**
 
 ## Training Logs
 
-![Imgur](https://imgur.com/qnPIfcM.png)
-
+![Imgur](https://imgur.com/vnp1L8a.png)
