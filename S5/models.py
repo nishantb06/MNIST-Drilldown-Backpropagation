@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+# Net 1 and Net 4 are the best
 
 #Model -1 7922 parmaeters
 dropout_value = 0.02
